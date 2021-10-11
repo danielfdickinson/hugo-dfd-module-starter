@@ -1,0 +1,5 @@
+public/*
+!public/posts
+!public/archives
+**/page/*/index.html
+public/**/migrate-from-jekyl/index.html
