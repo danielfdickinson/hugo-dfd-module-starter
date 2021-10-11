@@ -1,5 +1,7 @@
 # DFD Hugo Module Starter
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1f8ccf5e-d791-41eb-b8a4-0f41b4ea4112/deploy-status)](https://app.netlify.com/sites/hugo-dfd-module-starter/deploys)
+
 A starter repo for building Hugo modules (by Daniel F. Dickinson)
 
 ## Features
