@@ -17,5 +17,5 @@ A starter repo for building Hugo modules (by Daniel F. Dickinson)
 ## Not a Theme
 
 **Note:** This is not a theme, or even a theme component (although it could the basis for one).
-This is a Hugo module skeleton, but with useful defaults for many of the files you will need in a
-useful module.
+This is a Hugo module skeleton, but with useful defaults for many of the files you will need in an
+actual module.
