@@ -21,6 +21,9 @@
                     "relaxed": true
                 }
         ],
-        "require-sri": "off"
+        "require-sri": "off",
+        "void-style": "off",
+        "no-trailing-whitespace": "off",
+        "prefer-tbody": "off"
     }
 }
