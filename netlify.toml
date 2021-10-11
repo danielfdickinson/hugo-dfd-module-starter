@@ -21,15 +21,8 @@
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
 
-    [plugins.inputs]
-      srcdir = "exampleSite"
-
 [[plugins]]
   package = "netlify-plugin-html-validate"
-
-    [plugins.inputs]
-      ext = "html"
-      config = "exampleSite/.htmlvalidate.json"
 
 [[plugins]]
   package = "netlify-plugin-checklinks"
