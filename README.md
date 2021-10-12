@@ -28,9 +28,9 @@ actual module.
    * Latest version of the ``main`` branch:
      * ZIP: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/heads/main.zip>
      * Tarball: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/heads/main.tar.gz>
-   * Or the latest release (currently 0.1.1):
-     * Tarball: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/0.1.1.tar.gz>
-     * Or ZIP: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/0.1.1.zip>
+   * Or the latest release (currently 0.1.2):
+     * Tarball: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/0.1.2.tar.gz>
+     * Or ZIP: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/0.1.2.zip>
 2. Create a directory (for example ``hugo-dfd-responsive-images``)
 3. ``cd hugo-dfd-responsive-images``
 4. Extract the archive into this directory (e.g. ``unzip /path/to/downloaded/main.zip``)
