@@ -1,9 +1,5 @@
 baseURL = "https://example.com/"
-title = "DFD Module Starter Demo Site"
 copyright = "© 2021 Daniel F. Dickinson"
-description = "Demo site for Daniel F. Dickinsons (DFD) Hugo module starter module skeleton"
-language = "en"
-languageCode = "en-ca"
 defaultContentLanguage = "en"
 homepage = "https://hugo-dfd-module-starter.wildtechgarden.ca/"
 enableGitInfo = true
@@ -12,16 +8,31 @@ enableRobotsTXT = true
 [params]
   debugTableEnvironment = ["production","development"]
   mainSections = ["post","docs"]
-  testStylesInclude = true
+  # Footnotes and TableOfContents don't work properly with a base href set in <head>
   useBaseURL = false
 
-[menu]
+# See https://gohugo.io/content-management/multilingual/
+# and https://www.regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/
+[languages]
+  [languages.en]
+    languageName = ":en:"
+    languageAltTitle = "English"
+    title = "DFD Module Starter Demo Site"
+    description = "Demo site for Daniel F. Dickinsons (DFD) Hugo module starter module skeleton"
+    weight = 1
+    
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 10
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
+      [[languages.en.menu.main]]
+        identifier = "accessibility"
+        name = "Accessibility"
+        url = "/accessibility/"
+        weight = 20
 
 [author]
   name = "Daniel F. Dickinson"
@@ -39,6 +50,11 @@ enableRobotsTXT = true
   lastmod = ["lastmod",":git",":fileModTime","date","publishDate"]
   date = ["date","publishDate","lastmod",":git",":fileModTime"]
   publishDate = ["publishDate","date","lastmod",":git",":fileModTime"]
+
+[markup]
+  [markup.highlight]
+    guessSyntax = true
+    noClasses = false
 
 [privacy]
 
@@ -83,7 +99,7 @@ enableRobotsTXT = true
 
     [[module.imports.mounts]]
       source = "README.md"
-      target = "assets/README.md"
+      target = "assets/README-dfd-module-starter.md"
 
     [[module.imports.mounts]]
       source = "i18n"
