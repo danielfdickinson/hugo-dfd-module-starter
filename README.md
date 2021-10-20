@@ -41,7 +41,7 @@ actual module.
 9. (optional) ``git lfs install``
 10. ``git add .``
 11. ``git commit``
-12. Create a GitHub repo (e.g. I used ``hugo-dfd-responsive-images`` which resulted in a URL of <https://github.com/danielfdickinson/hugo-dfd-responsive-images> (don’t add a README, LICENSE, and so on as the repo already has all that, and we want a bare repo for pushing our new module).
+12. Create a GitHub repo (e.g. in one case, I used ``hugo-dfd-responsive-images`` which resulted in a URL of <https://github.com/danielfdickinson/hugo-dfd-responsive-images> (don’t add a README, LICENSE, and so on via GitHub as the repo already has all that, and we want a bare repo for pushing our new module).
 13. ``git remote add origin https://github.com/danielfdickinson/hugo-dfd-responsive-images.git``
 14. ``git push origin --set-upstream main``
 15. After a few moments you should see the code for your repo on GitHub (in the web interface).
