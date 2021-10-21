@@ -78,10 +78,6 @@ enableRobotsTXT = true
     path = "github.com/danielfdickinson/hugo-dfd-module-starter"
 
     [[module.imports.mounts]]
-      source = "content"
-      target = "content"
-
-    [[module.imports.mounts]]
       source = "static"
       target = "static"
 
