@@ -34,14 +34,14 @@ actual module.
 2. Create a directory (for example ``hugo-dfd-responsive-images``)
 3. ``cd hugo-dfd-responsive-images``
 4. Extract the archive into this directory (e.g. ``unzip /path/to/downloaded/main.zip``)
-5. Edit ``README.md``, ``LICENSE``, ``go.mod``, ``netlify.toml`` and ``exampleSite/README.md``, ``exampleSite/LICENSE``, ``exampleSite/config.toml``, ``exampleSite/go.mod`` with the information applicable to your module.
+5. Edit ``README.md``, ``LICENSE``, ``go.mod``, ``netlify.toml`` and ```exampleSite/config.toml``, ``exampleSite/go.mod`` with the information applicable to your module.
 6. ``git init``
 7. ``git checkout -b main`` (this is optional)
 8. ``git branch -D master`` (only execute if you use 7. above)
 9. (optional) ``git lfs install``
 10. ``git add .``
 11. ``git commit``
-12. Create a GitHub repo (e.g. in one case, I used ``hugo-dfd-responsive-images`` which resulted in a URL of <https://github.com/danielfdickinson/hugo-dfd-responsive-images> (don’t add a README, LICENSE, and so on via GitHub as the repo already has all that, and we want a bare repo for pushing our new module).
+12. Create a GitHub repo (e.g. in one case, I used ``hugo-dfd-responsive-images`` which resulted in a URL of <https://github.com/danielfdickinson/hugo-dfd-responsive-images>) (don’t add a README, LICENSE, and so on via GitHub as the repo already has all that, and we want a bare repo for pushing our new module).
 13. ``git remote add origin https://github.com/danielfdickinson/hugo-dfd-responsive-images.git``
 14. ``git push origin --set-upstream main``
 15. After a few moments you should see the code for your repo on GitHub (in the web interface).
@@ -105,3 +105,36 @@ Prerequisite: You have already setup the Netlify app for you GitHub user or orga
 
 You are now ready to develop your module.
 Hack away!
+
+## Some useful Markdown for your module's README
+
+```markdown
+## Features
+
+TBD
+
+## Basic Usage
+
+### Importing the Module
+
+1. The first step to making use of this module is to add it to your site or theme.  In your configuration file:
+
+   ``config.toml``
+   \```toml
+   [module]
+     [[module.imports]]
+       path = "github.com/danielfdickinson/hugo-dfd-module-starter"
+   \```
+   OR
+   ``config.yaml``
+   \```yaml
+   module:
+     imports:
+       - path: github.com/danielfdickinson/hugo-dfd-module-starter
+   \```
+2. Execute
+   \```bash
+   hugo mod get github.com/danielfdickinson/hugo-dfd-module-starter
+   hugo mod tidy
+   \```
+```
