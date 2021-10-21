@@ -4,3 +4,7 @@
 .netlify
 /netlify.log
 node_modules
+# For debugging using Netlify CLI (netlify dev command)
+/.env
+# For keeping the .env file around when not using it
+/.disabled-env
