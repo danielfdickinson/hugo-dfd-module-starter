@@ -34,17 +34,18 @@ actual module.
 2. Create a directory (for example ``hugo-dfd-responsive-images``)
 3. ``cd hugo-dfd-responsive-images``
 4. Extract the archive into this directory (e.g. ``unzip /path/to/downloaded/main.zip``)
-5. Edit ``README.md``, ``LICENSE``, ``go.mod``, ``netlify.toml`` and ```exampleSite/config.toml``, ``exampleSite/go.mod`` with the information applicable to your module.
+5. Edit ``README.md``, ``LICENSE``, ``go.mod``, ``netlify.toml`` and ```exampleSite/config.toml``
 6. ``git init``
 7. ``git checkout -b main`` (this is optional)
 8. ``git branch -D master`` (only execute if you use 7. above)
 9. (optional) ``git lfs install``
-10. ``git add .``
-11. ``git commit``
-12. Create a GitHub repo (e.g. in one case, I used ``hugo-dfd-responsive-images`` which resulted in a URL of <https://github.com/danielfdickinson/hugo-dfd-responsive-images>) (don’t add a README, LICENSE, and so on via GitHub as the repo already has all that, and we want a bare repo for pushing our new module).
-13. ``git remote add origin https://github.com/danielfdickinson/hugo-dfd-responsive-images.git``
-14. ``git push origin --set-upstream main``
-15. After a few moments you should see the code for your repo on GitHub (in the web interface).
+10. ``export HUGO_MODULE_REPLACEMENTS="github.com/danielfdickinson/hugo-dfd-module-starter -> $(pwd)"; cd exampleSite && hugo mod tidy`` (subsituting your module name for ``github.com/danielfdickinson/hugo-dfd-module-starter``).
+11. ``git add .``
+12. ``git commit``
+13. Create a GitHub repo (e.g. in one case, I used ``hugo-dfd-responsive-images`` which resulted in a URL of <https://github.com/danielfdickinson/hugo-dfd-responsive-images>) (don’t add a README, LICENSE, and so on via GitHub as the repo already has all that, and we want a bare repo for pushing our new module).
+14. ``git remote add origin https://github.com/danielfdickinson/hugo-dfd-responsive-images.git``
+15. ``git push origin --set-upstream main``
+16. After a few moments you should see the code for your repo on GitHub (in the web interface).
 
 ### Connect repo with Netlify (for CI)
 
