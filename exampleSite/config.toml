@@ -4,6 +4,7 @@ defaultContentLanguage = "en"
 homepage = "https://hugo-dfd-module-starter.wildtechgarden.ca/"
 enableGitInfo = true
 enableRobotsTXT = true
+summaryLength = 25
 
 [params]
   debugTableEnvironment = ["production","development"]
