@@ -28,9 +28,9 @@ actual module.
    * Latest version of the ``main`` branch:
      * ZIP: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/heads/main.zip>
      * Tarball: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/heads/main.tar.gz>
-   * Or the latest release (currently 0.2.1):
-     * Tarball: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/0.2.1.tar.gz>
-     * Or ZIP: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/0.2.1.zip>
+   * Or the latest release (currently 0.3.0):
+     * Tarball: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/0.3.0.tar.gz>
+     * Or ZIP: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/0.3.0.zip>
 2. Create a directory (for example ``hugo-dfd-responsive-images``)
 3. ``cd hugo-dfd-responsive-images``
 4. Extract the archive into this directory (e.g. ``unzip /path/to/downloaded/main.zip``)
@@ -112,7 +112,8 @@ Hack away!
 ```markdown
 ## Features
 
-TBD
+* Module Demo Site allows showing [Hugo Debug Tables](https://github.com/danielfdickinson/hugo-debug-tables) by setting ``debugTablesInFooter = true`` in the ``exampleSite/config.toml``.
+* More…
 
 ## Basic Usage
 
