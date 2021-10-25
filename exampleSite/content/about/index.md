@@ -9,4 +9,4 @@ tags:
     - Site Information
 ---
 
-Placeholder for a real about page
+Placeholder for a real about page.
