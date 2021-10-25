@@ -9,4 +9,4 @@ tags:
     - Placeholder
 ---
 
-A placeholder for a post
+A placeholder for a post.

@@ -8,3 +8,5 @@ categories:
 tags:
     - Placeholder
 ---
+
+A placeholder for some documentation.
