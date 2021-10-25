@@ -3,7 +3,7 @@ title: "Accessibility"
 author: Daniel F. Dickinson
 date: 2021-10-15T05:57:11Z
 publishDate: 2021-10-15T05:57:11Z
-weight: 20
+description: "The site operator(s) make our best effort to keep this site accessible and inclusive. If you find something that does not meet that goal, please let us know."
 ---
 
 ## Statement
