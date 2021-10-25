@@ -1,8 +1,18 @@
 # DFD Hugo Module Starter
 
+A starter repo for building Hugo modules (by Daniel F. Dickinson)
+
+## Status
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1f8ccf5e-d791-41eb-b8a4-0f41b4ea4112/deploy-status)](https://app.netlify.com/sites/hugo-dfd-module-starter/deploys)
 
-A starter repo for building Hugo modules (by Daniel F. Dickinson)
+## Demo Site
+
+<https://hugo-dfd-module-starter.wildtechgarden.ca>
+
+## GitHub Repo
+
+<https://github.com/danielfdickinson/hugo-dfd-module-starter>
 
 ## Features
 
@@ -13,10 +23,12 @@ A starter repo for building Hugo modules (by Daniel F. Dickinson)
   * HTML Validation
   * Check internal links
   * HTML Minification
+* Module Demo Site allows showing [Hugo Debug Tables](https://github.com/danielfdickinson/hugo-debug-tables) by setting ``debugTablesInFooter = true`` in the ``exampleSite/config.toml``.
+* More…
 
 ## Not a Theme
 
-**Note:** This is not a theme, or even a theme component (although it could the basis for one).
+**Note:** This is not a theme, or even a theme component (although it could be the basis for one).
 This is a Hugo module skeleton, but with useful defaults for many of the files you will need in an
 actual module.
 
@@ -28,24 +40,25 @@ actual module.
    * Latest version of the ``main`` branch:
      * ZIP: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/heads/main.zip>
      * Tarball: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/heads/main.tar.gz>
-   * Or the latest release (currently 0.3.0):
-     * Tarball: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/0.3.0.tar.gz>
-     * Or ZIP: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/0.3.0.zip>
+   * Or the latest release (currently v0.4.0):
+     * Tarball: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/v0.4.0.tar.gz>
+     * Or ZIP: <https://github.com/danielfdickinson/hugo-dfd-module-starter/archive/refs/tags/v0.4.0.zip>
 2. Create a directory (for example ``hugo-dfd-responsive-images``)
 3. ``cd hugo-dfd-responsive-images``
-4. Extract the archive into this directory (e.g. ``unzip /path/to/downloaded/main.zip``)
-5. Edit ``README.md``, ``LICENSE``, ``go.mod``, ``netlify.toml`` and ```exampleSite/config.toml``
+4. Extract the archive into this directory (note that the archive contains a top-level versioned directory that you don't want. For example the README would be in ``hugo-dfd-module-starter-v0.4.0/README.md`` and you want it in ``README.md`` in your current directory. If you are using the tarball on Linux (including WSL), you can do ``tar --strip-components=1 -xzf /path/to/your/source-archive.tar.gz``).
+5. Edit ``README.md``, ``LICENSE``, ``go.mod``, ``netlify.toml``, ``exampleSite/config.toml``, ``exampleSite/content/about.md``, ``exampleSite/content/accessibility.md``, and ``exampleSite/content/docs/README.md``.
 6. ``git init``
 7. ``git checkout -b main`` (this is optional)
 8. ``git branch -D master`` (only execute if you use 7. above)
-9. (optional) ``git lfs install``
-10. ``export HUGO_MODULE_REPLACEMENTS="github.com/danielfdickinson/hugo-dfd-module-starter -> $(pwd)"; cd exampleSite && hugo mod tidy`` (subsituting your module name for ``github.com/danielfdickinson/hugo-dfd-module-starter``).
-11. ``git add .``
-12. ``git commit``
-13. Create a GitHub repo (e.g. in one case, I used ``hugo-dfd-responsive-images`` which resulted in a URL of <https://github.com/danielfdickinson/hugo-dfd-responsive-images>) (don’t add a README, LICENSE, and so on via GitHub as the repo already has all that, and we want a bare repo for pushing our new module).
-14. ``git remote add origin https://github.com/danielfdickinson/hugo-dfd-responsive-images.git``
-15. ``git push origin --set-upstream main``
-16. After a few moments you should see the code for your repo on GitHub (in the web interface).
+9.  (optional) ``git lfs install``
+10. ``export HUGO_MODULE_REPLACEMENTS="github.com/danielfdickinson/hugo-dfd-module-starter -> $(pwd)"; cd exampleSite && hugo mod tidy`` (substituting your module name for ``github.com/danielfdickinson/hugo-dfd-module-starter``).
+11. ``npm upgrade`` (this updates the Netlify plugins to latest versions, and fixes the ``package-lock.json`` current package name to your new module instead of ``hugo-dfd-module-starter``).
+12. ``git add .``
+13. ``git commit``
+14. Create a GitHub repo (e.g. in one case, I used ``hugo-dfd-responsive-images`` which resulted in a URL of <https://github.com/danielfdickinson/hugo-dfd-responsive-images>) (do not add a README, LICENSE and so on via GitHub as the repo already has all that, and you want a bare repository to which to push your local repo).
+15. ``git remote add origin https://github.com/danielfdickinson/hugo-dfd-responsive-images.git``
+16. ``git push origin --set-upstream main``
+17. After a few moments you should see the code for your repo on GitHub (in the web interface).
 
 ### Connect repo with Netlify (for CI)
 
@@ -112,8 +125,7 @@ Hack away!
 ```markdown
 ## Features
 
-* Module Demo Site allows showing [Hugo Debug Tables](https://github.com/danielfdickinson/hugo-debug-tables) by setting ``debugTablesInFooter = true`` in the ``exampleSite/config.toml``.
-* More…
+TBD
 
 ## Basic Usage
 
