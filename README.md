@@ -4,11 +4,7 @@ A starter repo for building Hugo modules (by Daniel F. Dickinson)
 
 ## Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1f8ccf5e-d791-41eb-b8a4-0f41b4ea4112/deploy-status)](https://app.netlify.com/sites/hugo-dfd-module-starter/deploys)
-
-## Demo Site
-
-<https://hugo-dfd-module-starter.wildtechgarden.ca>
+ARCHIVED: This repo is no longer maintained and may have problems (including security issues) and may be out-of-date.
 
 ## GitHub Repo
 
